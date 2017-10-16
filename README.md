@@ -15,7 +15,7 @@ An endpoint at `/kittens` lets us see the total number of kittens counted.
 
 ```bash
 # Installing app dependencies
-git clone git@github.com:staydomio/interview.git
+git clone https://github.com/staydomio/interview.git
 cd interview
 virtualenv env
 source env/bin/activate
