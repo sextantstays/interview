@@ -6,7 +6,7 @@ An endpoint at `/kittens` lets us see the total number of kittens counted.
 
 
 ## Quickstart
-1. Clone the repository
+1. Clone the [interview repository](https://github.com/staydomio/interview)
 2. Create a virtualenv and install requirements
 3. Open a new terminal and start a Redis server (use `run-redis.sh` to install and launch a private copy)
 4. In a new terminal start a Celery worker: `env/bin/celery worker -A app.celery --loglevel=info`
@@ -15,7 +15,7 @@ An endpoint at `/kittens` lets us see the total number of kittens counted.
 
 ```bash
 # Installing app dependencies
-git clone interview
+git clone git@github.com:staydomio/interview.git
 cd interview
 virtualenv env
 source env/bin/activate
