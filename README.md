@@ -7,11 +7,12 @@ An endpoint at `/kittens` lets us see the total number of kittens counted.
 
 ## Quickstart
 1. Clone the [interview repository](https://github.com/staydomio/interview)
-2. Create a virtualenv and install requirements
-3. Open a new terminal and start a Redis server (use `run-redis.sh` to install and launch a private copy)
-4. In a new terminal start a Celery worker: `env/bin/celery worker -A app.celery --loglevel=info`
-5. In a new terminal start the Flask application: `env/bin/python app.py`
-6. Go to `http://localhost:5000/kittens` and enjoy counting kittens!
+2. Install [pip](https://pip.pypa.io/en/stable/installing/) and [virtualenv](https://virtualenv.pypa.io/en/stable/installation/) if needed
+3. Create a virtualenv and install requirements
+4. Open a new terminal and start a Redis server (use `run-redis.sh` to install and launch a private copy)
+5. In a new terminal start a Celery worker: `env/bin/celery worker -A app.celery --loglevel=info`
+6. In a new terminal start the Flask application: `env/bin/python app.py`
+7. Go to `http://localhost:5000/kittens` and enjoy counting kittens!
 
 ```bash
 # Installing app dependencies
@@ -23,7 +24,7 @@ pip install -r requirements.txt
 ```
 ```bash
 # Installing and running redis
-chmod +x run-redis.sh
+chmod +x run-redis.sh  # If necessary
 ./run-redis.sh
 ```
 ```bash
