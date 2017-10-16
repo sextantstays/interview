@@ -51,5 +51,12 @@ def view_kitten_count():
     return render_template('kittens.html', kitten_count=r.get(KITTEN_COUNTER_METRIC))
 
 
+@app.route('/secrets', methods=['GET'])
+@app.route('/secrets/', methods=['GET'])
+def view_secrets():
+    """View a super secret page that no one should see. Shhh."""
+    return render_template('secrets.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True)

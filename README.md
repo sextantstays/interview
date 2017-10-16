@@ -40,6 +40,7 @@ env/bin/celery worker -A app.celery -B --loglevel=info
 * A simple [Flask](http://flask.pocoo.org/) app with three endpoints:
   * `/`: Landing page
   * `/kittens`: Displays the number of kittens counted
+  * `/secrets`: Shows a really private secret that no one outside the company should ever see!
 * [Celery](http://docs.celeryproject.org/en/latest/getting-started/introduction.html) task queue with one task:
   * `count_kittens`: Increments a kitten counter every X seconds.
 * [Redis](https://redis.io/) data store:
