@@ -211,7 +211,7 @@ def insert(table, fields=(), values=()):
             ', '.join(fields),
             ', '.join(['?'] * len(values))
         )
-        cursor = db.execute(query, values)
+        db.execute(query, values)
         db.commit()
         db.close()
 
