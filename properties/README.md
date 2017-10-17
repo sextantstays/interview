@@ -44,7 +44,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"firstName": "Rick", "last
 ```
 ```bash
 # Create a new property
-curl -X POST -H "Content-Type: application/json" -d '{"ownerId": "34f47dba-1013-4f79-b6f9-3ba4ec44c48e", "displayPictureUrl": "https://imgur.com/ViTP31Z", "address": "Red Keep St.", "type": "home", "bedrooms": 3, "bathrooms": 2.5, "state": "New York", "city": "New York City", "totalRevenue": 5100.00, "occupancyRate": 0.95, "id": "f73729f8-0fc6-4fc2-bfe6-f564f10ff907"}' http://127.0.0.1:5000/properties/
+curl -X POST -H "Content-Type: application/json" -d '{"ownerId": "34f47dba-1013-4f79-b6f9-3ba4ec44c48e", "displayPictureUrl": "https://imgur.com/ViTP31Z", "address": "Red Keep St.", "type": "castle", "bedrooms": 3, "bathrooms": 2.5, "state": "New York", "city": "New York City", "totalRevenue": 5100.00, "occupancyRate": 0.95, "id": "f73729f8-0fc6-4fc2-bfe6-f564f10ff907"}' http://127.0.0.1:5000/properties/
 ```
   
 
