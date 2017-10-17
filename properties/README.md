@@ -17,7 +17,7 @@ We use a basic Flask setup with two resources.
 ```bash
 # Installing app dependencies
 git clone https://github.com/staydomio/interview.git
-cd interview
+cd interview/properties
 virtualenv env
 source env/bin/activate
 pip install -r requirements.txt
