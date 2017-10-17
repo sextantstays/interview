@@ -106,3 +106,6 @@ venv.bak/
 
 # Celery beat schedule
 celerybeat-schedule.db
+
+# Sqllite db
+database.db
