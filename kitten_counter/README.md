@@ -12,7 +12,7 @@ An endpoint at `/kittens` lets us see the total number of kittens counted.
 4. Create a virtualenv and install requirements
 5. In a new terminal start the Flask application: `env/bin/python setup.py install && env/bin/python app.py`
 6. Open a new terminal and start a Redis server (use `run-redis.sh` to install and launch a private copy)
-7. In a new terminal start a Celery worker: `env/bin/celery worker -A app.celery --loglevel=info`
+7. In a new terminal start a Celery worker: `env/bin/celery worker -A app.celery -B --loglevel=info`
 8. Go to `http://localhost:5000/kittens` and enjoy counting kittens!
 
 ```bash
