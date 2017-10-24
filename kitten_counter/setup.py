@@ -1,8 +1,8 @@
 from setuptools import setup
 
 setup(
-   name='properties',
+   name='kitten_counter',
    version='1.0',
-   description='Properties Portal Interview Challenge.',
+   description='Kitten Counter interview challenge.',
    author='Carlos Gil',
 )

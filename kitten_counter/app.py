@@ -4,12 +4,14 @@ import redis
 from celery import Celery
 from flask import Flask
 from flask import render_template
+from flask_cors import CORS
 
 REDIS_HOST = 'localhost'
 REDIS_PORT = 6379
 KITTEN_COUNTER_METRIC = 'kitten_counter'
 
 app = Flask(__name__)
+CORS(app, supports_credentials=True)
 app.config['SECRET_KEY'] = 'top-secret!'
 
 # Celery configuration

@@ -3,8 +3,10 @@
 from flask import Flask
 from flask import jsonify
 from flask import request
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app, supports_credentials=True)
 app.config['SECRET_KEY'] = 'top-secret!'
 app.app_context().push()
 
