@@ -1,6 +1,6 @@
 INITIAL_PROPERTIES = [
     {
-        'displayPictureUrl': 'https://imgur.com/0700J1K',
+        'displayPictureUrl': 'https://i.imgur.com/0700J1K.jpg',
         'address': '1 Castle Ave',
         'type': 'home',
         'bedrooms': 20,
@@ -17,7 +17,7 @@ INITIAL_PROPERTIES = [
                        'with organic nursery. BEAUTIFUL!',
     },
     {
-        'displayPictureUrl': 'https://imgur.com/MXjhCKZ',
+        'displayPictureUrl': 'https://i.imgur.com/MXjhCKZ.jpg',
         'address': 'Round Home Alley',
         'type': 'home',
         'bedrooms': 1,
@@ -33,7 +33,7 @@ INITIAL_PROPERTIES = [
                        'historical centre of Porto an area classified as Worlds heritage.',
     },
     {
-        'displayPictureUrl': 'https://imgur.com/ViTP31Z',
+        'displayPictureUrl': 'https://i.imgur.com/ViTP31Z.jpg',
         'address': 'Red Keep St.',
         'type': 'home',
         'bedrooms': 4,
@@ -50,7 +50,7 @@ INITIAL_PROPERTIES = [
                        'pavillion for dive in movies.',
     },
     {
-        'displayPictureUrl': 'https://imgur.com/BLz3iqE',
+        'displayPictureUrl': 'https://i.imgur.com/BLz3iqE.jpg',
         'address': 'Blue Lagoon Ave',
         'type': 'home',
         'bedrooms': 4,
@@ -66,7 +66,7 @@ INITIAL_PROPERTIES = [
                        'the California high desert.',
     },
     {
-        'displayPictureUrl': 'https://imgur.com/PU1b0sA',
+        'displayPictureUrl': 'https://i.imgur.com/PU1b0sA.jpg',
         'address': 'P. Sherman 42 Wallaby Way',
         'type': 'apartment',
         'bedrooms': 2,
@@ -82,7 +82,7 @@ INITIAL_PROPERTIES = [
                        'streets or go to the nearest beaches.',
     },
     {
-        'displayPictureUrl': 'https://imgur.com/t9kiQDv',
+        'displayPictureUrl': 'https://i.imgur.com/t9kiQDv.jpg',
         'address': '101 St Nicholas Dr',
         'type': 'home',
         'bedrooms': 1,
@@ -98,7 +98,7 @@ INITIAL_PROPERTIES = [
                        'Henry Hudson Kitsons summer studio on the Santarella Estate.',
     },
     {
-        'displayPictureUrl': 'https://imgur.com/rb4cx4D',
+        'displayPictureUrl': 'https://i.imgur.com/rb4cx4D.jpg',
         'address': '533-1 Otsu',
         'type': 'apartment',
         'bedrooms': 2,
@@ -114,7 +114,7 @@ INITIAL_PROPERTIES = [
                        'and the area offers masses of things to do.',
     },
     {
-        'displayPictureUrl': 'https://imgur.com/8ICyD0Z',
+        'displayPictureUrl': 'https://i.imgur.com/8ICyD0Z.jpg',
         'address': '2 Shoes Lane',
         'type': 'home',
         'bedrooms': 1,
@@ -130,7 +130,7 @@ INITIAL_PROPERTIES = [
                        'materials located on a lovely acreage with sheep, gardens and orchards.',
     },
     {
-        'displayPictureUrl': 'https://imgur.com/SdhiKjC',
+        'displayPictureUrl': 'https://i.imgur.com/SdhiKjC.jpg',
         'address': '124 Conch Street',
         'type': 'home',
         'bedrooms': 1,
@@ -147,7 +147,7 @@ INITIAL_PROPERTIES = [
                        'parties or large gatherings.',
     },
     {
-        'displayPictureUrl': 'https://imgur.com/dESVdup',
+        'displayPictureUrl': 'https://i.imgur.com/dESVdup.png',
         'address': '742 Evergreen Terrace',
         'type': 'home',
         'bedrooms': 2,
