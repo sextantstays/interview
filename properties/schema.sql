@@ -12,7 +12,8 @@ CREATE TABLE property (
     state TEXT NOT NULL,
     city TEXT NOT NULL,
     totalRevenue FLOAT NOT NULL,
-    occupancyRate FLOAT NOT NULL
+    occupancyRate FLOAT NOT NULL,
+    description TEXT NOT NULL
 );
 
 CREATE TABLE owner (
