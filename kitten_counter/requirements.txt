@@ -1,6 +1,6 @@
-Flask==0.12.2
-Jinja2==2.9.6
-Werkzeug==0.12.2
+Flask==1.1.1
+Jinja2==2.10.1
+Werkzeug==0.15.5
 amqp==2.2.2
 celery==4.1.0
 kombu==4.1.0
