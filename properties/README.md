@@ -61,7 +61,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"ownerId": "34f47dba-1013-
 ```
 
 
-## Building locallay : Quickstart
+## Building locally : Quickstart
 1. Clone the [interview repository](https://github.com/staydomio/interview)
 2. Go to the `properties` challenge: `cd properties`.
 3. Install [pip](https://pip.pypa.io/en/stable/installing/) and [virtualenv](https://virtualenv.pypa.io/en/stable/installation/) if needed
