@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import datetime
 
 from flask import Flask
 from flask import jsonify
@@ -18,9 +19,19 @@ import database  # noqa
 database.init_db()
 
 
+def _add_dynamic_display_price(prop):
+    """Create a price that fluctuates around an anchor, unique to each property."""
+    base_rate = prop['totalRevenue'] * prop['occupancyRate'] * 1.00  # We anchor against totalRev
+    time_mult = datetime.datetime.now().second / 5  # Ranges 0 - 11
+    dynamic_price = round(base_rate + (time_mult * 25.00), 2)
+    prop['dynamicDisplayPrice'] = dynamic_price
+    return prop
+
+
 @app.route('/properties/', methods=['GET'])
 def get_all_properties():
     properties = database.get_all_properties()
+    properties = [_add_dynamic_display_price(prop) for prop in properties]
     return jsonify(
         properties=properties,
         count=len(properties),
@@ -29,8 +40,10 @@ def get_all_properties():
 
 @app.route('/properties/<property_id>/', methods=['GET'])
 def get_property(property_id):
+    prop = database.get_property(property_id)
+    prop = _add_dynamic_display_price(prop)
     return jsonify(
-        properties=database.get_property(property_id)
+        properties=prop
     )
 
 
