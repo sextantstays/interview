@@ -19,19 +19,24 @@ import database  # noqa
 database.init_db()
 
 
-def _add_dynamic_display_price(prop):
+def _add_display_prices(prop, offset=0):
     """Create a price that fluctuates around an anchor, unique to each property."""
-    base_rate = prop['totalRevenue'] * prop['occupancyRate'] * 1.00  # We anchor against totalRev
+    increment_amount = 25.00
     time_mult = datetime.datetime.now().second / 5  # Ranges 0 - 11
-    dynamic_price = round(base_rate + (time_mult * 25.00), 2)
-    prop['dynamicDisplayPrice'] = dynamic_price
+    offset_mult = (time_mult + offset) % 12  # So that each property increments in price at an offset from each other
+
+    base_price = prop['totalRevenue'] * prop['occupancyRate'] * 1.00  # We anchor against totalRev
+    dynamic_price = (base_price - increment_amount) + (offset_mult * increment_amount)
+
+    prop['basePrice'] = round(base_price, 2)
+    prop['dynamicDisplayPrice'] = round(dynamic_price, 2)
     return prop
 
 
 @app.route('/properties/', methods=['GET'])
 def get_all_properties():
     properties = database.get_all_properties()
-    properties = [_add_dynamic_display_price(prop) for prop in properties]
+    properties = [_add_display_prices(prop, i) for i, prop in enumerate(properties)]
     return jsonify(
         properties=properties,
         count=len(properties),
@@ -41,7 +46,7 @@ def get_all_properties():
 @app.route('/properties/<property_id>/', methods=['GET'])
 def get_property(property_id):
     prop = database.get_property(property_id)
-    prop = _add_dynamic_display_price(prop)
+    prop = _add_display_prices(prop)
     return jsonify(
         properties=prop
     )
